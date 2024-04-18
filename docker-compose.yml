@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+  php-apache:
+    container_name: "${CONTAINER_NAME_PREFIX}-symfony-laravel-stack"
+    build: ./.docker/php-apache
+    volumes:
+      - ${PATH_TO_SYMFONY_PROJECT}:/var/www/html
+    ports:
+      - "80:80"
+
+  db:
+    container_name: "${CONTAINER_NAME_PREFIX}-mysql"
+    image: mysql:latest
+    environment:
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    volumes:
+      - ${PATH_TO_DB_DATA}:/var/lib/mysql:rw
+    ports:
+      - "3308:3306"
+
+  mailer:
+    container_name: "${CONTAINER_NAME_PREFIX}-mailer"
+    image: schickling/mailcatcher
+    ports:
+      - "1025:1025"
+      - "1080:1080"
+
+  adminer:
+    container_name: "${CONTAINER_NAME_PREFIX}-adminer"
+    image: adminer
+    ports:
+      - "8080:8080"
