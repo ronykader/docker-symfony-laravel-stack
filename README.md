@@ -1,9 +1,9 @@
-# Docker with Symfony and Laravel
+# Symfony and Laravel Dockerized Starter Kit
 
-This Docker Symfony and Laravel Stack enables rapid setup of a local development environment, with each component meticulously chosen to support the optimal operation of Symfony ^7 and Laravel ^11
+This Symfony and Laravel Dockerized Starter Kit enables rapid setup of a local development environment, with each component meticulously chosen to support the optimal operation of Symfony ^7 and Laravel ^11
 
 ## Getting started - After clone this repository
-Copy the .env.dist file and edit the entries to your needs:
+Easily copy the .env.dist file and customize it as required.
 ```
 cp .env.dist .env
 ```
