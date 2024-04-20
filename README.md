@@ -22,7 +22,7 @@ To enable Symfony CLI, simply uncomment the specified line in the Dockerfile:
 
 ```Dockerfile
 RUN curl -sS https://get.symfony.com/cli/installer | bash && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
-
+```
 
 Check your active Docker container by running the following command:
 
@@ -37,6 +37,7 @@ docker exec -it your-container-name bash
 ```
 
 Start your Symfony project either by using Composer with the command
+
 ```angular2html
  composer create-project symfony/skeleton:"7.0.*" ./
 ```
@@ -51,7 +52,9 @@ Configure the database settings in Symfony's .env file to match those of Docker'
 DATABASE_URL=mysql://ronykader:db_password@db:3306/symfony_laravel?serverVersion=8.0
 ```
 
-[Run your project using the URL:](http://127.0.0.1:8000)
+[Run your project. Click Here](http://127.0.0.1:8000)  
+
+http://127.0.0.1:8000
     
 
 ### Laravel Project Setup
