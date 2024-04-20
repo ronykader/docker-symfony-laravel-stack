@@ -1,6 +1,6 @@
 ## Symfony and Laravel Dockerized Starter Kit
-[![Total Downloads](https://poser.pugx.org/ronykader/docker-symfony-laravel-stack/downloads)](https://packagist.org/packages/ronykader/docker-symfony-laravel-stack)
-
+![](https://github.com/ronykader/docker-symfony-laravel-stack/workflows/CI/badge.svg)
+![](https://img.shields.io/badge/license-AGPL--3.0-green)
 Welcome to the Symfony and Laravel Dockerized Starter Kit! This kit allows for rapid setup of a local development environment, with each component meticulously chosen to support the optimal operation of Symfony version 7 and Laravel version 11.
 
 ### Getting Started
