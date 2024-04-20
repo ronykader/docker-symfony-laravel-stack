@@ -18,7 +18,7 @@ After cloning this repository, follow these steps to get started:
     docker-compose up
     ```
 
-### Symfony Project Setup
+<h2>🛠️ Installation Steps:</h2>
 
 To enable Symfony CLI, simply uncomment the specified line in the Dockerfile:
 
