@@ -18,7 +18,7 @@ After cloning this repository, follow these steps to get started:
     docker-compose up
     ```
 
-<h2>🛠️ Installation Steps:</h2>
+<h3>🛠️ Symfony Project Setup:</h3>
 
 To enable Symfony CLI, simply uncomment the specified line in the Dockerfile:
 
@@ -52,13 +52,10 @@ Configure the database settings in Symfony's .env file to match those of Docker'
 ```angular2html
 DATABASE_URL=mysql://ronykader:db_password@db:3306/symfony_laravel?serverVersion=8.0
 ```
-
-[Run your project.](http://127.0.0.1:8000)  
-
-http://127.0.0.1:8000
     
 
-### Laravel Project Setup
+<h3>🛠️ Laravel Project Setup:</h3>
+
    To enable Laravel CLI, simply uncomment the specified line in the Dockerfile:
 
       RUN composer global require laravel/installer
