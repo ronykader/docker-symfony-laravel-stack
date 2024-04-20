@@ -5,9 +5,9 @@ services:
     container_name: "${CONTAINER_NAME_PREFIX}-symfony-laravel-stack"
     build: ./.docker/php-apache
     volumes:
-      - ${PATH_TO_SYMFONY_PROJECT}:/var/www/html
+      - ${PATH_TO_SYMFONY_LARAVEL_PROJECT}:/var/www/html
     ports:
-      - "80:80"
+      - "8000:80"
 
   db:
     container_name: "${CONTAINER_NAME_PREFIX}-mysql"
