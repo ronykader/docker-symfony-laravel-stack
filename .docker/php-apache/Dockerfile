@@ -23,7 +23,7 @@ RUN apt-get install -y \
     && a2enmod rewrite
 
 # INSTALL APCU
-RUN pecl install apcu-5.1.22 && docker-php-ext-enable apcu
+RUN pecl install apcu && docker-php-ext-enable apcu
 RUN echo "extension=apcu.so" > /usr/local/etc/php/php.ini
 RUN echo "apc.enable_cli=1" > /usr/local/etc/php/php.ini
 RUN echo "apc.enable=1" > /usr/local/etc/php/php.ini
